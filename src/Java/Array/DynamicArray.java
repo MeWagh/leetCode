@@ -15,11 +15,11 @@ public class DynamicArray
     }
     public void Add(int data)
     {
-        if(_count == _size)
+        if(_count == _size) 
         {
-            GrowSize();
+            GrowSize(); // O(n)
         }
-        _array[_count] = data;
+        _array[_count] = data; // O(1)
         _count++;
 
     }
@@ -33,7 +33,7 @@ public class DynamicArray
         _size=_count;
         _array = temp;
     }
-    public void AddAt(int index,int data)
+    public void AddAt(int index,int data) // O(n)
     {
         if(_count == _size)
         {
@@ -46,7 +46,7 @@ public class DynamicArray
         _array[index] = data;
         _count++;
     }
-    public void removeAt(int index)
+    public void removeAt(int index) // O(n)
     {
        
         for(int i= index ; i < _count;i++)
@@ -69,7 +69,7 @@ public class DynamicArray
         _array[0] = data;
         _count++;
     }
-    public void Pop()
+    public void Pop() // O(1)
     {
         _array[_count - 1] = 0;
         _count--;
