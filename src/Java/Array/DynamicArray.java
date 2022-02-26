@@ -56,6 +56,24 @@ public class DynamicArray
         _array[_count - 1] = 0;
         _count--;
     }
+    public void prepend(int data) //can use insert above at index 0
+    {
+        if(_count == _size)
+        {
+            GrowSize();
+        }
+        for(int i= _count-1; i >=0;i--)
+        {
+            _array[i + 1] = _array[i];
+        }
+        _array[0] = data;
+        _count++;
+    }
+    public void Pop()
+    {
+        _array[_count - 1] = 0;
+        _count--;
+    }
     private void GrowSize()
     {
         int temp[] =new int[_size * 2];
@@ -85,7 +103,7 @@ public class DynamicArray
         da.ShrinkSize();
         da.PrintArray(da);
 
-         // add an element at index 1
+        // add an element at index 1
          da.AddAt(1, 22);
          da.PrintArray(da);
          da.removeAt(5);
@@ -93,6 +111,8 @@ public class DynamicArray
          da.ShrinkSize();
          da.PrintArray(da);
 
+         da.prepend(10);
+         da.PrintArray(da);
     }
     public void PrintArray(DynamicArray da)
     {
