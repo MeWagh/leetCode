@@ -6,7 +6,7 @@ public class rotateArray
         int[] intArray = new int[]{1,2,3,4,5,6,7,8,9}; 
         PrintArray(intArray);
         rotate(intArray,3);
-     }
+    }
     public static void rotate(int[] numbers, int index) 
     {
         int[] temp = new int[index];
@@ -33,8 +33,5 @@ public class rotateArray
         for (int i = 0; i < temp.length; i++) {
             System.out.print(temp[i] + " ");
         }
-
     }
-
-
 }
