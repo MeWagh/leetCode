@@ -1,4 +1,4 @@
-import javax.lang.model.util.ElementScanner6;
+
 
 public class sinleLinkedList 
 {
@@ -113,8 +113,8 @@ public class sinleLinkedList
 
 
 }
-class node
-{
-    public node nextNode;
-    public int value;
-}
+// class node
+// {
+//     public node nextNode;
+//     public int value;
+// }

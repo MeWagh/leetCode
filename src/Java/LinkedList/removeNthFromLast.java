@@ -58,8 +58,8 @@ public class removeNthFromLast
         linkedList.nextNode = temp_node;
     }
 }
-class node
-{
-    public node nextNode;
-    public int value;
-}
+// class node
+// {
+//     public node nextNode;
+//     public int value;
+// }
