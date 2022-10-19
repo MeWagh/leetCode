@@ -1,6 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "src/Java/LinkedList",
         "src/Java/Array",
-        "src/Java/LinkedList"
-    ]
+        "src/NeetCode150"
+    ],
+    "FSharp.suggestGitignore": false
 }
